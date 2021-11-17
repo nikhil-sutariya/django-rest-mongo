@@ -1,0 +1,18 @@
+connection with mongodb -- Done
+connection with meteorjs for frontend
+
+
+Cattlebazzar --
+login page 
+index page where ads listed at nearby areas, search bar, select location bar, filter by categories 
+submit ad, edit ad, delete ad
+opened adpage where logged in users only see the contact details
+language select
+send email 
+
+
+Swagger, Postman with Django rest framework -
+API - Note app
+Operations perform - Get, Post, GetbyID, Put, Patch, Delete
+
+

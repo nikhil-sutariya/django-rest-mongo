@@ -1,0 +1,10 @@
+body{
+    background-color: #f1f2f3 !important;
+}
+.card .card-body p{
+    font-size: 18px;
+}
+
+.card .btn{
+    font-size: 14px;
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block nav_index %}active{% endblock %}
+{% block content %}
+
+{% for nt in notes %}
+<div class="card w-50 bg-light">
+    <div class="card-header mb-2">
+        <h5>{{ nt.title.capitalize }}</h5>
+    </div>
+    <div class="card-body">
+        <h6 class="text-muted mb-3">Description: </h6>
+        <p>{{ nt.description.capitalize }}</p><br>
+        <button class="btn btn-primary" type="button">Edit</button>
+        <button class="btn btn-danger ms-3" type="button">Delete</button>
+    </div>
+</div>
+{% empty %}
+<div class="new">
+    <h5 class="text-muted">No notes created yet!!</h5>
+    <a href="{% url 'createNote' %}"><button type="button" class="btn btn-success">Create now</button></a>
+</div>
+{% endfor %}
+{% endblock %}
